@@ -9,6 +9,7 @@ pipeline {
         stage("Create Kubernetes Deployment and Service") {
             steps {
                 sh 'terraform init'
+                sh 'pwd'
                 sh 'terraform apply'
             }
         }

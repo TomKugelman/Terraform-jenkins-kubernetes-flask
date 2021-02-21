@@ -1,5 +1,5 @@
 pipeline {
-    node("ubuntu-worker-2") {
+    agent {node 'ubuntu-worker-2') {
         stages {
             stage("Checkout from SCM") {
                 steps {

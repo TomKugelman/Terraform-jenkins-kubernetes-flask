@@ -10,6 +10,7 @@ pipeline {
             steps {
                 sh 'terraform init'
                 sh 'pwd'
+                sh 'terraform validate'
                 sh 'terraform apply -auto-approve'
             }
         }

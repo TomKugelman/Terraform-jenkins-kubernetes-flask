@@ -72,9 +72,9 @@ resource "kubernetes_deployment" "flask" {
   }
 }
 
-resource "kubernetes_service" "nginx" {
+resource "kubernetes_service" "flask" {
   metadata {
-    name = "flask-"
+    name = "flask-app"
   }
   spec {
     selector = {

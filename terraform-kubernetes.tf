@@ -23,7 +23,7 @@ terraform {
 #}
 
 provider "kubernetes" {
-  config_path = "/usr/tom/.kube/config"
+  config_path = "/home/tom/.kube/config" #must be absolute since jenkins user did not setup cluster
 }
 
 resource "kubernetes_deployment" "flask" {

@@ -23,7 +23,7 @@ terraform {
 #}
 
 provider "kubernetes" {
-  config_path = "~/.kube/config"
+  config_path = "/usr/tom/.kube/config"
 }
 
 resource "kubernetes_deployment" "flask" {
